@@ -1,0 +1,41 @@
+---
+title: "Assignment1_rbasic"
+author: "DYJ"
+date: "2023-11-30"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## Assignment1
+
+
+```{r CLASS2-1}
+as.character(3.141592657)
+as.logical(3.141592657)
+is.character("hello world")
+is.na(NA)
+```
+
+```{r CLASS2-2}
+v1 <- c(1,2,3,4)
+# 1
+v1[c(2,3)]
+# 2
+v1[length(v1)]
+# 3
+v1[length(v1)-1]
+# 4
+v1[v1 %% 3 == 0]
+# 5
+v1[-1] # 2 3 4 return v1 without the first variable
+# 6
+v1[5] # NA return the fifth variable of v1, v1 only has 4 variables, so return NA
+# 7
+v1[] <- 99 # v1 <-  c(99,99,99,99)
+print(v1) # v1[] generates a vector with the same length as before
+v1 <- 99 
+print(v1) # v1 <- 99 just generates one element
+```
